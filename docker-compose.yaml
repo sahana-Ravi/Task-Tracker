@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  tracker_cli:                # 👈 service name (must be indented under services)
+    build: .                  # build from Dockerfile in current directory
+    image: tracker_cli:latest # name/tag for the image
+    container_name: tracker_cli
+    stdin_open: true          # same as -i
+    tty: true                 # same as -t
+
+    #docker compose run tracker_cli
+    #docker compose run tracker_cli
